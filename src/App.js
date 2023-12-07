@@ -1,5 +1,6 @@
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
 import Faq from "./Components/Faq";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
