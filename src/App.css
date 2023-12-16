@@ -326,7 +326,7 @@
     --text-sm:14px;
   }
   .h-screen {
-    min-height: 800px;
+    min-height: 700px;
   }
 }
 @media (min-width:992px) {
@@ -342,7 +342,7 @@
     --text-sm:14px;
   }
   .h-screen {
-    min-height: 900px;
+    min-height: 800px;
   }
 }
 @media (max-width: 768px) {
