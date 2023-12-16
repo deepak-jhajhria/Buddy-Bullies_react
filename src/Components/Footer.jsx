@@ -1,5 +1,6 @@
 import React from "react";
 import BrandLogoIcon from "./BrandLogoIcon";
+import { Container } from "react-bootstrap";
 const links= {
   link1:'Roadmap',
   link2:'FAQs',
@@ -9,7 +10,7 @@ let LinksClassName = 'text-white text-sm fw-normal ff-p text-decoration-none'
 const Footer = () => {
   return (
     <div id="JoinUs" className="bg-footer mt_2 bg-blue">
-      <div className="container-xxl pt-5">
+      <Container className="pt-5">
         <p className="m-0 text-white text-center text-5xl fw-semibold ff-p pt-2 pt-sm-3 pt-md-4 pt-lg-5">
           JOIN US
         </p>
@@ -36,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

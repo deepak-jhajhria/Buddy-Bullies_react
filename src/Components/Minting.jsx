@@ -9,10 +9,10 @@ import ImageD from "../assets/images/D.png";
 import ImageE from "../assets/images/E.png";
 import ImageF from "../assets/images/F.png";
 import BrandLogoIcon from "./BrandLogoIcon";
-import { Col, Container, Row } from "react-bootstrap";
+import { Card, CardBody, CardHeader, CardText, Col, Container, Row } from "react-bootstrap";
 const Minting = () => {
-  let CardClassName = "card bs-card rounded-4 h-100";
-  let CardContentClassName = "card-body p-4";
+  let CardClassName = "bs-card rounded-4 h-100";
+  let CardContentClassName = "p-4";
   let CardParaClassName =
     "m-0 text-white opacity-50  ff-p text-base pt-4  fw-normal";
   let CardHeadingTag = "m-0 text-white pt-5 text-4xl fw-semibold ff-p";
@@ -63,16 +63,16 @@ const Minting = () => {
   ];
   const listingComponents = CardValue.map((listing) => (
     <Col key={listing.id} className={RowColClassNameOne}>
-      <div className={CardClassName}>
-        <div className={CardContentClassName}>
+      <Card className={CardClassName}>
+        <CardBody className={CardContentClassName}>
           <img src={listing.image} alt={listing.discription} />
-          <h2 className={CardHeadingTag}>{listing.heading}</h2>
-          <p
+          <CardHeader className={CardHeadingTag}>{listing.heading}</CardHeader>
+          <CardText
             className={CardParaClassName}
             dangerouslySetInnerHTML={{ __html: listing.para }}
-          ></p>
-        </div>
-      </div>
+          ></CardText>
+        </CardBody>
+      </Card>
     </Col>
   ));
   return (
