@@ -1,5 +1,7 @@
-import React from "react";
-const Navbar = () => {
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+const NavBar = () => {
   function Menu() {
     document.querySelector(".Mobileview").classList.toggle("end-0");
     document.querySelector("body").classList.toggle("overflow-hidden");
@@ -18,20 +20,20 @@ let NavlinksClassName = 'navLinks text-decoration-none pe-lg-3 text-nowrap text-
 let LiClassName ='list-unstyled'
 let UlClassName ='align-items-center d-flex Mobileview gap-5 text-decoration-none m-0 p-0'
   return (
-    <nav className="py-3">
-      <div className="container-xxl d-flex align-items-center justify-content-between">
+    <Navbar className="py-3">
+      <Container className="d-flex align-items-center justify-content-between">
         <a className="text-white text-2xl fw-600 ff-p text-decoration-none  " href="#">Logo</a>
         <ul className={UlClassName}>
-          <li className={LiClassName}><a onClick={NavLinks} className={NavlinksClassName} href="#Minting">Minting</a></li>
-          <li className={LiClassName}><a onClick={NavLinks} className={NavlinksClassName} href="#RoadMap">Road Map</a></li>
-          <li className={LiClassName}><a onClick={NavLinks} className={NavlinksClassName} href="#Faq">Faq</a></li>
-          <li className={LiClassName}><a onClick={NavLinks} className={NavlinksClassName} href="#Team">Team</a></li>
-          <li className={LiClassName}><a onClick={NavLinks} className={NavlinksClassName} href="#JoinUs">Join Us</a></li>
+          <li className={LiClassName}><Nav.Link onClick={NavLinks} className={NavlinksClassName} href="#Minting">Minting</Nav.Link></li>
+          <li className={LiClassName}><Nav.Link onClick={NavLinks} className={NavlinksClassName} href="#RoadMap">Road Map</Nav.Link></li>
+          <li className={LiClassName}><Nav.Link onClick={NavLinks} className={NavlinksClassName} href="#Faq">Faq</Nav.Link></li>
+          <li className={LiClassName}><Nav.Link onClick={NavLinks} className={NavlinksClassName} href="#Team">Team</Nav.Link></li>
+          <li className={LiClassName}><Nav.Link onClick={NavLinks} className={NavlinksClassName} href="#JoinUs">Join Us</Nav.Link></li>
         </ul>
         <label onClick={Menu} className="Menu z-5 d-md-none"><span className="span1"></span><span className="mt-2 span2"></span><span className="mt-2 span3"></span></label>
-      </div>
-    </nav>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default NavBar;

@@ -1,4 +1,4 @@
-import React from "react";
+import Accordion from 'react-bootstrap/Accordion';
 import Ellipse4 from "../assets/images/Ellipse-4.png";
 const Faq = () => {
   return (
@@ -11,11 +11,11 @@ const Faq = () => {
           FAQs
         </h2>
         <div className="position-relative  z-2 pt-5 ">
-          <div className="accordion accordion-flush" id="accordionFlushExample">
-            <div className="accordion-item bg-transparent border-0 mb-3">
+          <Accordion className="accordion-flush" id="accordionFlushExample" defaultActiveKey="0">
+          <div className="accordion-item bg-transparent border-0 mb-3">
               <h2 className="accordion-header" id="flush-headingOne">
                 <button
-                  className="accordion-button bs-card collapsed text-xl fw-medium ff-m text-white rounded-pill overflow-hidden shadow-none "
+                  className="accordion-button collapsed bs-card collapsed text-xl fw-medium ff-m text-white rounded-pill overflow-hidden shadow-none"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne"
@@ -31,7 +31,7 @@ const Faq = () => {
                 aria-labelledby="flush-headingOne"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div className="accordion-body  text-white text-base fw-medium ff-m opacity-75 ">
+                <div className="accordion-body text-white text-base fw-medium ff-m">
                   Hac varius turpis sit pulvinar lorem magna velit sit. Dapibus
                   mattis adipiscing ornare arcu vitae enim. Proin turpis enim
                   egestas sed in accumsan, feugiat neque turpis. Fringilla dui
@@ -121,7 +121,7 @@ const Faq = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Accordion>
         </div>
       </div>
     </div>

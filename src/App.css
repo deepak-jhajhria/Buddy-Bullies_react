@@ -37,6 +37,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.container{
+  max-width: 1140px !important;
+}
 .container-faq {
   max-width: 830px !important;
 }
@@ -285,6 +288,10 @@
 }
 .-m-1{
   margin-top: -2px;
+}
+.accordion-button::after{
+  background-image: url(./assets/images/upVector.png) !important;
+  height: 8px !important;
 }
 @media (min-width:576px) {
   :root {

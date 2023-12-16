@@ -1,5 +1,4 @@
 import React from "react";
-
 const Sec1 = () => {
   return (
     <div className="container-xxl h-screen d-flex position-relative z-3">
