@@ -67,8 +67,7 @@ const Minting = () => {
         <CardBody className={CardContentClassName}>
           <img src={listing.image} alt={listing.discription} />
           <CardHeader className={CardHeadingTag}>{listing.heading}</CardHeader>
-          <CardText
-            className={CardParaClassName}
+          <CardText className={CardParaClassName}
             dangerouslySetInnerHTML={{ __html: listing.para }}
           ></CardText>
         </CardBody>

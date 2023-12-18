@@ -2,6 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 const NavBar = () => {
+  let NavlinksClassName = 'navLinks text-decoration-none pe-lg-3 text-nowrap text-white linksLine text-lg fw-medium ff-p'
+  let LiClassName ='list-unstyled'
+  let UlClassName ='align-items-center d-flex Mobileview gap-5 text-decoration-none m-0 p-0'
+  
   function Menu() {
     document.querySelector(".Mobileview").classList.toggle("end-0");
     document.querySelector("body").classList.toggle("overflow-hidden");
@@ -16,9 +20,6 @@ const NavBar = () => {
     document.querySelector(".span2").classList.remove("span5");
     document.querySelector(".span3").classList.remove("span6");
   }
-let NavlinksClassName = 'navLinks text-decoration-none pe-lg-3 text-nowrap text-white linksLine text-lg fw-medium ff-p'
-let LiClassName ='list-unstyled'
-let UlClassName ='align-items-center d-flex Mobileview gap-5 text-decoration-none m-0 p-0'
   return (
     <Navbar className="py-3">
       <Container className="d-flex align-items-center justify-content-between">
